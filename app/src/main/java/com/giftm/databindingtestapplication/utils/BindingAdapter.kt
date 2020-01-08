@@ -1,6 +1,5 @@
 package com.giftm.databindingtestapplication.utils
 
-import android.opengl.Visibility
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -37,3 +36,5 @@ val String.testval: String
     get() = "test"
 
 fun String.lastChar() : Char? = this.get(this.length - 1)
+
+fun String.lastChar(item :Int): Char ? = this[length-1]
